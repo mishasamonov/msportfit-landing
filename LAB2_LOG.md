@@ -8,3 +8,4 @@
 ## Журнал виконання (коротко)
 - (дата/час) init: створено репозиторій і підготовлено журнал LAB2_LOG.md
 - Stage 1: створено базову структуру проекту (HTML5, CSS, JS), додано SEO мета-теги, налаштовано robots.txt/sitemap.xml, створено placeholder SVG та favicons
+- Stage 2: додано accessibility покращення (skip-link, ARIA labels, семантична структура, focus-visible стилі), Open Graph/Twitter meta-теги та Schema.org JSON-LD для SEO

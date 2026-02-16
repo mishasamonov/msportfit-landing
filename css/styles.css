@@ -70,6 +70,34 @@ a:hover {
   color: var(--color-secondary);
 }
 
+/* Focus Visible Styles for Accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Skip Link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding: var(--spacing-xs) var(--spacing-md);
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* Container */
 .container {
   max-width: var(--max-width);
@@ -127,4 +155,53 @@ a:hover {
 
 .mb-lg {
   margin-bottom: var(--spacing-lg);
+}
+
+/* Navigation Styles */
+.nav-list {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+/* Footer Styles */
+.footer-links {
+  display: flex;
+  gap: var(--spacing-md);
+  list-style: none;
+  margin-top: var(--spacing-sm);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: var(--spacing-2xl) 0;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sections */
+section {
+  padding: var(--spacing-xl) 0;
+}
+
+.university-logo {
+  max-width: 150px;
+  height: auto;
+  margin-top: var(--spacing-md);
 }

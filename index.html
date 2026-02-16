@@ -8,6 +8,19 @@
   <meta name="keywords" content="MSportFit, спорт, фітнес, тренування, аналіз даних, фітнес-трекер">
   <link rel="canonical" href="https://example.com/">
   
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="MSportFit — Цифрова платформа для управління тренувальним процесом">
+  <meta property="og:description" content="Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/img/og-image-placeholder.jpg">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MSportFit — Цифрова платформа для управління тренувальним процесом">
+  <meta name="twitter:description" content="Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів">
+  <meta name="twitter:image" content="https://example.com/assets/img/og-image-placeholder.jpg">
+  
   <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
@@ -18,27 +31,98 @@
   <!-- Styles -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://example.com/#webpage",
+        "url": "https://example.com/",
+        "name": "MSportFit — Цифрова платформа для управління тренувальним процесом",
+        "description": "Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів",
+        "inLanguage": "uk"
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://example.com/#thesis",
+        "name": "MSportFit — Цифрова платформа для управління тренувальним процесом спортсменів",
+        "alternateName": "MSportFit — Digital Platform for Athletes Training Management",
+        "description": "Бакалаврська робота присвячена розробці веб-платформи для управління та аналізу тренувального процесу спортсменів на основі даних з фітнес-трекерів",
+        "keywords": "MSportFit, спортивні технології, аналіз навантаження, фітнес-трекери, управління тренуваннями, веб-платформа",
+        "author": {
+          "@type": "Person",
+          "name": "[Автор - студент]"
+        },
+        "sourceOrganization": {
+          "@type": "EducationalOrganization",
+          "name": "[Назва університету]"
+        },
+        "inLanguage": "uk"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- TODO: Додати вміст хедера на наступному етапі -->
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+  
   <header class="header">
     <div class="container">
-      <!-- TODO: Навігація та лого -->
+      <nav aria-label="Головна навігація">
+        <ul class="nav-list">
+          <li><a href="#features">Можливості</a></li>
+          <li><a href="#demo">Демо</a></li>
+          <li><a href="#about">Про проєкт</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- TODO: Додати вміст основного контенту на наступному етапі -->
-  <main class="main">
-    <!-- TODO: Hero секція -->
-    <!-- TODO: Features секція -->
-    <!-- TODO: Demo секція -->
-    <!-- TODO: About секція -->
+  <main class="main" id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">MSportFit — Цифрова платформа для управління тренувальним процесом</h1>
+        <p class="hero-description">Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів</p>
+        <img src="./assets/img/hero-placeholder.svg" alt="Ілюстрація платформи MSportFit з графіками аналізу тренувань" class="hero-image">
+      </div>
+    </section>
+
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Ключові можливості</h2>
+        <p>Платформа надає потужні інструменти для моніторингу та оптимізації тренувального процесу</p>
+      </div>
+    </section>
+
+    <section class="demo" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <h2 id="demo-title">Демонстрація роботи</h2>
+        <p>Приклад використання основних функцій платформи</p>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Про проєкт</h2>
+        <p>MSportFit розроблено в рамках бакалаврської роботи для оптимізації спортивних тренувань на основі даних</p>
+        <img src="./assets/img/university-logo.svg" alt="Логотип університету" class="university-logo">
+      </div>
+    </section>
   </main>
 
-  <!-- TODO: Додати вміст футера на наступному етапі -->
   <footer class="footer">
     <div class="container">
-      <!-- TODO: Контактна інформація та посилання -->
+      <p>&copy; 2026 MSportFit. Бакалаврська робота.</p>
+      <nav aria-label="Додаткова навігація">
+        <ul class="footer-links">
+          <li><a href="mailto:contact@example.com">Контакти</a></li>
+          <li><a href="#about">Документація</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
 
