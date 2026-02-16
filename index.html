@@ -3,126 +3,254 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MSportFit — Цифрова платформа для управління тренувальним процесом</title>
-  <meta name="description" content="MSportFit — інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів">
-  <meta name="keywords" content="MSportFit, спорт, фітнес, тренування, аналіз даних, фітнес-трекер">
+  <title data-i18n="meta.title">Інформаційна система підтримки спортивних тренувань і харчування — MSportFit</title>
+  <meta name="description" data-i18n-content="meta.description" content="MSportFit — україномовний вебзастосунок, що поєднує тренувальні програми, каталог вправ із порадами та відео, довідник продуктів і калькулятори BMI/TDEE/БЖВ. Мета — зменшити «інфошум» і дати користувачу єдиний план.">
+  <meta name="keywords" data-i18n-content="meta.keywords" content="інформаційна система, вебзастосунок, спортивні тренування, харчування, BMI, TDEE, БЖВ, довідник продуктів, каталог вправ">
   <link rel="canonical" href="https://example.com/">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="MSportFit — Цифрова платформа для управління тренувальним процесом">
-  <meta property="og:description" content="Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:title" data-i18n-content="meta.title" content="Інформаційна система підтримки спортивних тренувань і харчування — MSportFit">
+  <meta property="og:description" data-i18n-content="meta.description" content="MSportFit — україномовний вебзастосунок, що поєднує тренувальні програми, каталог вправ із порадами та відео, довідник продуктів і калькулятори BMI/TDEE/БЖВ. Мета — зменшити «інфошум» і дати користувачу єдиний план.">
   <meta property="og:url" content="https://example.com/">
   <meta property="og:image" content="https://example.com/assets/img/og-image-placeholder.jpg">
-  
-  <!-- Twitter Card Meta Tags -->
+  <meta property="og:locale" content="uk_UA">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MSportFit — Цифрова платформа для управління тренувальним процесом">
-  <meta name="twitter:description" content="Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів">
+  <meta name="twitter:title" data-i18n-content="meta.title" content="Інформаційна система підтримки спортивних тренувань і харчування — MSportFit">
+  <meta name="twitter:description" data-i18n-content="meta.description" content="MSportFit — україномовний вебзастосунок, що поєднує тренувальні програми, каталог вправ із порадами та відео, довідник продуктів і калькулятори BMI/TDEE/БЖВ. Мета — зменшити «інфошум» і дати користувачу єдиний план.">
   <meta name="twitter:image" content="https://example.com/assets/img/og-image-placeholder.jpg">
-  
+
   <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
   <link rel="manifest" href="./assets/favicons/site.webmanifest">
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
-  
+
   <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="schema-jsonld">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://example.com/#webpage",
-        "url": "https://example.com/",
-        "name": "MSportFit — Цифрова платформа для управління тренувальним процесом",
-        "description": "Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів",
-        "inLanguage": "uk"
-      },
-      {
-        "@type": "CreativeWork",
-        "@id": "https://example.com/#thesis",
-        "name": "MSportFit — Цифрова платформа для управління тренувальним процесом спортсменів",
-        "alternateName": "MSportFit — Digital Platform for Athletes Training Management",
-        "description": "Бакалаврська робота присвячена розробці веб-платформи для управління та аналізу тренувального процесу спортсменів на основі даних з фітнес-трекерів",
-        "keywords": "MSportFit, спортивні технології, аналіз навантаження, фітнес-трекери, управління тренуваннями, веб-платформа",
-        "author": {
-          "@type": "Person",
-          "name": "[Автор - студент]"
-        },
-        "sourceOrganization": {
-          "@type": "EducationalOrganization",
-          "name": "[Назва університету]"
-        },
-        "inLanguage": "uk"
-      }
-    ]
+    "@type": "WebSite",
+    "name": "MSportFit",
+    "description": "Інформаційна система підтримки спортивних тренувань і харчування",
+    "url": "https://example.com/",
+    "inLanguage": "uk",
+    "author": {
+      "@type": "Person",
+      "name": "Самонов Михайло Володимирович"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://example.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 </head>
 <body>
   <!-- Skip Link for Accessibility -->
-  <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
-  
-  <header class="header">
+  <a href="#main-content" class="skip-link" data-i18n="nav.skipToMain">Перейти до основного вмісту</a>
+
+  <header class="header" role="banner">
     <div class="container">
-      <nav aria-label="Головна навігація">
-        <ul class="nav-list">
-          <li><a href="#features">Можливості</a></li>
-          <li><a href="#demo">Демо</a></li>
-          <li><a href="#about">Про проєкт</a></li>
-        </ul>
+      <nav class="header-nav" role="navigation" aria-label="Головна навігація">
+        <div class="logo">
+          <a href="/" aria-label="MSportFit — Головна">
+            <strong>MSportFit</strong>
+          </a>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Вибір мови">
+          <button
+            id="lang-ua"
+            class="lang-btn active"
+            aria-pressed="true"
+            data-lang="ua"
+            data-i18n-aria="nav.langUa"
+          >UA</button>
+          <button
+            id="lang-en"
+            class="lang-btn"
+            aria-pressed="false"
+            data-lang="en"
+            data-i18n-aria="nav.langEn"
+          >EN</button>
+        </div>
       </nav>
     </div>
   </header>
 
-  <main class="main" id="main-content">
+  <main id="main-content" class="main" role="main">
+
+    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
-        <h1 id="hero-title">MSportFit — Цифрова платформа для управління тренувальним процесом</h1>
-        <p class="hero-description">Інноваційна платформа для аналізу та управління фізичним навантаженням спортсменів на основі даних фітнес-трекерів</p>
-        <img src="./assets/img/hero-placeholder.svg" alt="Ілюстрація платформи MSportFit з графіками аналізу тренувань" class="hero-image">
+        <h1 id="hero-title" class="hero-title" data-i18n="hero.title">Інформаційна система підтримки спортивних тренувань і харчування</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Information System for Supporting Sports Training and Nutrition</p>
+        <p class="hero-description" data-i18n="hero.description">MSportFit — україномовний вебзастосунок, що поєднує тренувальні програми, каталог вправ із порадами та відео, довідник продуктів і калькулятори BMI/TDEE/БЖВ. Мета — зменшити «інфошум» і дати користувачу єдиний план.</p>
+        <div class="hero-keywords">
+          <p class="text-light" data-i18n="hero.keywords"><strong>Ключові слова:</strong> інформаційна система, вебзастосунок, спортивні тренування, харчування, BMI, TDEE, БЖВ, довідник продуктів, каталог вправ</p>
+        </div>
+        <div class="hero-actions">
+          <a href="https://github.com/mishasamonov/MSportFit_demo" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaDemo">Переглянути демо</a>
+          <a href="./full-text.html" class="btn btn-secondary" data-i18n="hero.ctaFullText">Повний текст роботи</a>
+        </div>
       </div>
     </section>
 
-    <section class="features" id="features" aria-labelledby="features-title">
+    <!-- Актуальність -->
+    <section class="section section-alt" aria-labelledby="relevance-title">
       <div class="container">
-        <h2 id="features-title">Ключові можливості</h2>
-        <p>Платформа надає потужні інструменти для моніторингу та оптимізації тренувального процесу</p>
+        <h2 id="relevance-title" data-i18n="relevance.title">Актуальність дослідження</h2>
+        <p data-i18n="relevance.content">Сучасні користувачі стикаються з величезною кількістю розрізнених джерел інформації про фітнес і харчування: одні застосунки пропонують тренування, інші — калькулятори калорій, треті — каталоги продуктів. Це створює «інформаційний шум» і ускладнює планування. MSportFit об&#x27;єднує ключові функції в єдиній україномовній платформі, надаючи персоналізовані рекомендації та зручний доступ до всіх необхідних інструментів.</p>
       </div>
     </section>
 
-    <section class="demo" id="demo" aria-labelledby="demo-title">
+    <!-- Мета та завдання -->
+    <section class="section" aria-labelledby="goals-title">
       <div class="container">
-        <h2 id="demo-title">Демонстрація роботи</h2>
-        <p>Приклад використання основних функцій платформи</p>
+        <h2 id="goals-title" data-i18n="goals.title">Мета та завдання дослідження</h2>
+
+        <h3 data-i18n="goals.goalTitle">Мета:</h3>
+        <p data-i18n="goals.goalText">Розроблення україномовного адаптивного вебзастосунку MSportFit як інформаційної системи підтримки тренувань і харчування, що зменшує «інформаційний шум» і забезпечує персоналізований вибір програм, розрахунки BMI, BMR&#x2192;TDEE та БЖВ, а також автентифікацію, профіль і збереження «обраного» через API.</p>
+
+        <h3 class="mt-lg" data-i18n="goals.tasksTitle">Основні завдання:</h3>
+        <ul class="task-list">
+          <li data-i18n="goals.task1">Проаналізувати предметну область, аналоги та сформувати вимоги/сценарії.</li>
+          <li data-i18n="goals.task2">Спроєктувати архітектуру, модулі та модель даних (користувачі, програми, вправи, продукти, обране).</li>
+          <li data-i18n="goals.task3">Реалізувати клієнтську частину (React/Vite), адаптивний та доступний інтерфейс.</li>
+          <li data-i18n="goals.task4">Реалізувати серверну частину (REST API), реєстрацію/вхід та «обране» з збереженням у БД.</li>
+          <li data-i18n="goals.task5">Імплементувати калькулятори (BMI, BMR&#x2192;TDEE, БЖВ), довідники та забезпечити деплой/документацію.</li>
+        </ul>
       </div>
     </section>
 
-    <section class="about" id="about" aria-labelledby="about-title">
+    <!-- Методологія -->
+    <section class="section section-alt" aria-labelledby="methodology-title">
       <div class="container">
-        <h2 id="about-title">Про проєкт</h2>
-        <p>MSportFit розроблено в рамках бакалаврської роботи для оптимізації спортивних тренувань на основі даних</p>
-        <img src="./assets/img/university-logo.svg" alt="Логотип університету" class="university-logo">
+        <h2 id="methodology-title" data-i18n="methodology.title">Методологія дослідження</h2>
+        <p data-i18n="methodology.content">Аналіз вимог; проєктування UI/UX; реалізація прототипу; перевірка коректності формул і сценаріїв взаємодії.</p>
       </div>
     </section>
+
+    <!-- Технології -->
+    <section class="section" aria-labelledby="tech-title">
+      <div class="container">
+        <h2 id="tech-title" data-i18n="tech.title">Технологічний стек</h2>
+        <p data-i18n="tech.content">React + Vite, JavaScript, SCSS; сервер: Node.js/Express; БД: PostgreSQL (Prisma); дані: JSON &#x2192; API.</p>
+      </div>
+    </section>
+
+    <!-- Очікувані результати -->
+    <section class="section section-alt" aria-labelledby="results-title">
+      <div class="container">
+        <h2 id="results-title" data-i18n="results.title">Очікувані результати</h2>
+        <ul class="results-list">
+          <li data-i18n="results.item1">Повноцінний вебзастосунок з адаптивним інтерфейсом.</li>
+          <li data-i18n="results.item2">Тренувальні програми та каталог вправ із порадами і відео.</li>
+          <li data-i18n="results.item3">Довідник продуктів (ккал та БЖВ на 100 г).</li>
+          <li data-i18n="results.item4">Калькулятори BMI, BMR/TDEE та БЖВ.</li>
+          <li data-i18n="results.item5">FAQ та базові рекомендації.</li>
+          <li data-i18n="results.item6">Акаунт користувача: реєстрація/вхід, профіль, збереження «обраного» через API.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Демо прототипу -->
+    <section class="section section-alt" aria-labelledby="demo-title">
+      <div class="container">
+        <h2 id="demo-title" data-i18n="demo.title">Демо прототипу</h2>
+        <p data-i18n="demo.description">Прототип інформаційної системи MSportFit доступний у відкритому репозиторії на GitHub. Ви можете переглянути код, завантажити проєкт та протестувати функціональність.</p>
+
+        <div class="demo-actions">
+          <a href="https://github.com/mishasamonov/MSportFit_demo" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="demo.btnRepository">Відкрити репозиторій</a>
+        </div>
+
+        <div class="demo-gallery mt-lg">
+          <h3 data-i18n="demo.galleryTitle">Знімки екрана</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-home.png" alt="Головна сторінка MSportFit" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot1">Головна сторінка</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-programs.png" alt="Каталог тренувальних програм" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot2">Тренувальні програми</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-program-detail.png" alt="Деталі програми тренувань" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot3">Деталі програми</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-exercises.png" alt="Каталог вправ з фільтрами" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot4">Каталог вправ</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-exercise-video.png" alt="Відео вправи з демонстрацією" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot5">Відео вправи</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-exercise-detail.png" alt="Деталі вправи з порадами" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot6">Деталі вправи</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-calc-bmi.png" alt="Калькулятор BMI" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot7">Калькулятор BMI</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-calc-tdee.png" alt="Калькулятор TDEE" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot8">Калькулятор TDEE</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-calc-macros.png" alt="Калькулятор БЖВ (макроси)" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot9">Калькулятор БЖВ</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-products.png" alt="Довідник продуктів з БЖВ" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot10">Довідник продуктів</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-faq.png" alt="FAQ — відповіді на питання" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot11">FAQ</p>
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/img/screenshot-register.png" alt="Сторінка реєстрації користувача" loading="lazy">
+              <p class="gallery-caption" data-i18n="demo.shot12">Реєстрація</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" data-i18n="contact.title">Контакти</h2>
+        <div class="contact-info">
+          <p><strong data-i18n="contact.authorLabel">Автор:</strong> <span data-i18n="contact.authorName">Самонов Михайло Володимирович</span></p>
+          <p><strong data-i18n="contact.emailLabel">Email:</strong> <a href="mailto:student@example.com">student@example.com</a></p>
+          <p><strong data-i18n="contact.repositoryLabel">Репозиторій:</strong> <a href="https://github.com/mishasamonov/MSportFit_demo" target="_blank" rel="noopener noreferrer">github.com/mishasamonov/MSportFit_demo</a></p>
+          <p><strong data-i18n="contact.fullTextLabel">Повний текст:</strong> <a href="./full-text.html" data-i18n="contact.fullTextLink">Переглянути повний текст роботи</a></p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <p>&copy; 2026 MSportFit. Бакалаврська робота.</p>
-      <nav aria-label="Додаткова навігація">
-        <ul class="footer-links">
-          <li><a href="mailto:contact@example.com">Контакти</a></li>
-          <li><a href="#about">Документація</a></li>
-        </ul>
-      </nav>
+      <div class="footer-content">
+        <p>&copy; <span id="current-year">2026</span> MSportFit. <span data-i18n="footer.rights">Всі права захищені.</span></p>
+        <p class="text-light" data-i18n="footer.thesis">Бакалаврська робота з інформаційної системи підтримки спортивних тренувань і харчування</p>
+      </div>
     </div>
   </footer>
 
