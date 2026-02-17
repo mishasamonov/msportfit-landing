@@ -97,7 +97,18 @@
         <p class="hero-subtitle" data-i18n="hero.subtitle">Information System for Supporting Sports Training and Nutrition</p>
         <p class="hero-description" data-i18n="hero.description">MSportFit — україномовний вебзастосунок, що поєднує тренувальні програми, каталог вправ із порадами та відео, довідник продуктів і калькулятори BMI/TDEE/БЖВ. Мета — зменшити «інфошум» і дати користувачу єдиний план.</p>
         <div class="hero-keywords">
-          <p class="text-light" data-i18n="hero.keywords"><strong>Ключові слова:</strong> інформаційна система, вебзастосунок, спортивні тренування, харчування, BMI, TDEE, БЖВ, довідник продуктів, каталог вправ</p>
+          <span class="keywords-label" data-i18n="hero.keywordsLabel">Ключові слова</span>
+          <div class="chips" data-i18n="hero.keywordsChips">
+            <span class="chip">інформаційна система</span>
+            <span class="chip">вебзастосунок</span>
+            <span class="chip">спортивні тренування</span>
+            <span class="chip">харчування</span>
+            <span class="chip">BMI</span>
+            <span class="chip">TDEE</span>
+            <span class="chip">БЖВ</span>
+            <span class="chip">довідник продуктів</span>
+            <span class="chip">каталог вправ</span>
+          </div>
         </div>
         <div class="hero-actions">
           <a href="https://github.com/mishasamonov/MSportFit_demo" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaDemo">Переглянути демо</a>
@@ -109,58 +120,99 @@
     <!-- Актуальність -->
     <section class="section section-alt" aria-labelledby="relevance-title">
       <div class="container">
-        <h2 id="relevance-title" data-i18n="relevance.title">Актуальність дослідження</h2>
-        <p data-i18n="relevance.content">Сучасні користувачі стикаються з величезною кількістю розрізнених джерел інформації про фітнес і харчування: одні застосунки пропонують тренування, інші — калькулятори калорій, треті — каталоги продуктів. Це створює «інформаційний шум» і ускладнює планування. MSportFit об&#x27;єднує ключові функції в єдиній україномовній платформі, надаючи персоналізовані рекомендації та зручний доступ до всіх необхідних інструментів.</p>
+        <div class="card">
+          <h2 id="relevance-title" data-i18n="relevance.title">Актуальність дослідження</h2>
+          <p data-i18n="relevance.content">Сучасні користувачі стикаються з величезною кількістю розрізнених джерел інформації про фітнес і харчування: одні застосунки пропонують тренування, інші — калькулятори калорій, треті — каталоги продуктів. Це створює «інформаційний шум» і ускладнює планування. MSportFit об&#x27;єднує ключові функції в єдиній україномовній платформі, надаючи персоналізовані рекомендації та зручний доступ до всіх необхідних інструментів.</p>
+        </div>
       </div>
     </section>
 
     <!-- Мета та завдання -->
     <section class="section" aria-labelledby="goals-title">
       <div class="container">
-        <h2 id="goals-title" data-i18n="goals.title">Мета та завдання дослідження</h2>
+        <div class="card">
+          <h2 id="goals-title" data-i18n="goals.title">Мета та завдання дослідження</h2>
 
-        <h3 data-i18n="goals.goalTitle">Мета:</h3>
-        <p data-i18n="goals.goalText">Розроблення україномовного адаптивного вебзастосунку MSportFit як інформаційної системи підтримки тренувань і харчування, що зменшує «інформаційний шум» і забезпечує персоналізований вибір програм, розрахунки BMI, BMR&#x2192;TDEE та БЖВ, а також автентифікацію, профіль і збереження «обраного» через API.</p>
+          <h3 data-i18n="goals.goalTitle">Мета:</h3>
+          <p data-i18n="goals.goalText">Розроблення україномовного адаптивного вебзастосунку MSportFit як інформаційної системи підтримки тренувань і харчування, що зменшує «інформаційний шум» і забезпечує персоналізований вибір програм, розрахунки BMI, BMR&#x2192;TDEE та БЖВ, а також автентифікацію, профіль і збереження «обраного» через API.</p>
 
-        <h3 class="mt-lg" data-i18n="goals.tasksTitle">Основні завдання:</h3>
-        <ul class="task-list">
-          <li data-i18n="goals.task1">Проаналізувати предметну область, аналоги та сформувати вимоги/сценарії.</li>
-          <li data-i18n="goals.task2">Спроєктувати архітектуру, модулі та модель даних (користувачі, програми, вправи, продукти, обране).</li>
-          <li data-i18n="goals.task3">Реалізувати клієнтську частину (React/Vite), адаптивний та доступний інтерфейс.</li>
-          <li data-i18n="goals.task4">Реалізувати серверну частину (REST API), реєстрацію/вхід та «обране» з збереженням у БД.</li>
-          <li data-i18n="goals.task5">Імплементувати калькулятори (BMI, BMR&#x2192;TDEE, БЖВ), довідники та забезпечити деплой/документацію.</li>
-        </ul>
+          <h3 class="mt-lg" data-i18n="goals.tasksTitle">Основні завдання:</h3>
+          <ul class="task-list">
+            <li data-i18n="goals.task1">Проаналізувати предметну область, аналоги та сформувати вимоги/сценарії.</li>
+            <li data-i18n="goals.task2">Спроєктувати архітектуру, модулі та модель даних (користувачі, програми, вправи, продукти, обране).</li>
+            <li data-i18n="goals.task3">Реалізувати клієнтську частину (React/Vite), адаптивний та доступний інтерфейс.</li>
+            <li data-i18n="goals.task4">Реалізувати серверну частину (REST API), реєстрацію/вхід та «обране» з збереженням у БД.</li>
+            <li data-i18n="goals.task5">Імплементувати калькулятори (BMI, BMR&#x2192;TDEE, БЖВ), довідники та забезпечити деплой/документацію.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Методологія -->
     <section class="section section-alt" aria-labelledby="methodology-title">
       <div class="container">
-        <h2 id="methodology-title" data-i18n="methodology.title">Методологія дослідження</h2>
-        <p data-i18n="methodology.content">Аналіз вимог; проєктування UI/UX; реалізація прототипу; перевірка коректності формул і сценаріїв взаємодії.</p>
+        <div class="card">
+          <h2 id="methodology-title" data-i18n="methodology.title">Методологія дослідження</h2>
+          <p data-i18n="methodology.content">Аналіз вимог; проєктування UI/UX; реалізація прототипу; перевірка коректності формул і сценаріїв взаємодії.</p>
+        </div>
       </div>
     </section>
 
     <!-- Технології -->
     <section class="section" aria-labelledby="tech-title">
       <div class="container">
-        <h2 id="tech-title" data-i18n="tech.title">Технологічний стек</h2>
-        <p data-i18n="tech.content">React + Vite, JavaScript, SCSS; сервер: Node.js/Express; БД: PostgreSQL (Prisma); дані: JSON &#x2192; API.</p>
+        <div class="card">
+          <h2 id="tech-title" data-i18n="tech.title">Технологічний стек</h2>
+          <div class="tech-grid">
+            <div class="tech-card">
+              <h3 data-i18n="tech.frontendLabel">Frontend</h3>
+              <div class="chips">
+                <span class="chip">React</span>
+                <span class="chip">Vite</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">SCSS</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <h3 data-i18n="tech.backendLabel">Backend</h3>
+              <div class="chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <h3 data-i18n="tech.dbLabel">База даних</h3>
+              <div class="chips">
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Prisma</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <h3 data-i18n="tech.dataLabel">Дані</h3>
+              <div class="chips">
+                <span class="chip">JSON</span>
+                <span class="chip">REST API</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Очікувані результати -->
     <section class="section section-alt" aria-labelledby="results-title">
       <div class="container">
-        <h2 id="results-title" data-i18n="results.title">Очікувані результати</h2>
-        <ul class="results-list">
-          <li data-i18n="results.item1">Повноцінний вебзастосунок з адаптивним інтерфейсом.</li>
-          <li data-i18n="results.item2">Тренувальні програми та каталог вправ із порадами і відео.</li>
-          <li data-i18n="results.item3">Довідник продуктів (ккал та БЖВ на 100 г).</li>
-          <li data-i18n="results.item4">Калькулятори BMI, BMR/TDEE та БЖВ.</li>
-          <li data-i18n="results.item5">FAQ та базові рекомендації.</li>
-          <li data-i18n="results.item6">Акаунт користувача: реєстрація/вхід, профіль, збереження «обраного» через API.</li>
-        </ul>
+        <div class="card">
+          <h2 id="results-title" data-i18n="results.title">Очікувані результати</h2>
+          <ul class="results-list">
+            <li data-i18n="results.item1">Повноцінний вебзастосунок з адаптивним інтерфейсом.</li>
+            <li data-i18n="results.item2">Тренувальні програми та каталог вправ із порадами і відео.</li>
+            <li data-i18n="results.item3">Довідник продуктів (ккал та БЖВ на 100 г).</li>
+            <li data-i18n="results.item4">Калькулятори BMI, BMR/TDEE та БЖВ.</li>
+            <li data-i18n="results.item5">FAQ та базові рекомендації.</li>
+            <li data-i18n="results.item6">Акаунт користувача: реєстрація/вхід, профіль, збереження «обраного» через API.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -233,12 +285,14 @@
     <!-- Контакти -->
     <section class="section" aria-labelledby="contact-title">
       <div class="container">
-        <h2 id="contact-title" data-i18n="contact.title">Контакти</h2>
-        <div class="contact-info">
-          <p><strong data-i18n="contact.authorLabel">Автор:</strong> <span data-i18n="contact.authorName">Самонов Михайло Володимирович</span></p>
-          <p><strong data-i18n="contact.emailLabel">Email:</strong> <a href="mailto:student@example.com">student@example.com</a></p>
-          <p><strong data-i18n="contact.repositoryLabel">Репозиторій:</strong> <a href="https://github.com/mishasamonov/MSportFit_demo" target="_blank" rel="noopener noreferrer">github.com/mishasamonov/MSportFit_demo</a></p>
-          <p><strong data-i18n="contact.fullTextLabel">Повний текст:</strong> <a href="./full-text.html" data-i18n="contact.fullTextLink">Переглянути повний текст роботи</a></p>
+        <div class="card">
+          <h2 id="contact-title" data-i18n="contact.title">Контакти</h2>
+          <div class="contact-info">
+            <p><strong data-i18n="contact.authorLabel">Автор:</strong> <span data-i18n="contact.authorName">Самонов Михайло Володимирович</span></p>
+            <p><strong data-i18n="contact.emailLabel">Email:</strong> <a href="mailto:student@example.com">student@example.com</a></p>
+            <p><strong data-i18n="contact.repositoryLabel">Репозиторій:</strong> <a href="https://github.com/mishasamonov/MSportFit_demo" target="_blank" rel="noopener noreferrer">github.com/mishasamonov/MSportFit_demo</a></p>
+            <p><strong data-i18n="contact.fullTextLabel">Повний текст:</strong> <a href="./full-text.html" data-i18n="contact.fullTextLink">Переглянути повний текст роботи</a></p>
+          </div>
         </div>
       </div>
     </section>
