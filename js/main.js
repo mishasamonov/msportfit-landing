@@ -22,8 +22,9 @@
         'Information System for Supporting Sports Training and Nutrition',
       'hero.description':
         'MSportFit — україномовний вебзастосунок, що поєднує тренувальні програми, каталог вправ із порадами та відео, довідник продуктів і калькулятори BMI/TDEE/БЖВ. Мета — зменшити «інфошум» і дати користувачу єдиний план.',
-      'hero.keywords':
-        '<strong>Ключові слова:</strong> інформаційна система, вебзастосунок, спортивні тренування, харчування, BMI, TDEE, БЖВ, довідник продуктів, каталог вправ',
+      'hero.keywordsLabel': 'Ключові слова',
+      'hero.keywordsChips':
+        '<span class="chip">інформаційна система</span><span class="chip">вебзастосунок</span><span class="chip">спортивні тренування</span><span class="chip">харчування</span><span class="chip">BMI</span><span class="chip">TDEE</span><span class="chip">БЖВ</span><span class="chip">довідник продуктів</span><span class="chip">каталог вправ</span>',
       'hero.ctaDemo': 'Переглянути демо',
       'hero.ctaFullText': 'Повний текст роботи',
 
@@ -52,8 +53,10 @@
         'Аналіз вимог; проєктування UI/UX; реалізація прототипу; перевірка коректності формул і сценаріїв взаємодії.',
 
       'tech.title': 'Технологічний стек',
-      'tech.content':
-        'React + Vite, JavaScript, SCSS; сервер: Node.js/Express; БД: PostgreSQL (Prisma); дані: JSON \u2192 API.',
+      'tech.frontendLabel': 'Frontend',
+      'tech.backendLabel': 'Backend',
+      'tech.dbLabel': 'База даних',
+      'tech.dataLabel': 'Дані',
 
       'results.title': 'Очікувані результати',
       'results.item1': 'Повноцінний вебзастосунок з адаптивним інтерфейсом.',
@@ -113,8 +116,9 @@
         'Інформаційна система підтримки спортивних тренувань і харчування',
       'hero.description':
         'MSportFit is a Ukrainian-language web app that combines training programs, an exercise catalog with tips and videos, a nutrition product table, and BMI/TDEE/macros calculators to reduce information noise and help users plan workouts and diet in one place.',
-      'hero.keywords':
-        '<strong>Keywords:</strong> information system, web app, sports training, nutrition, BMI, TDEE, macros, product catalog, exercise catalog',
+      'hero.keywordsLabel': 'Keywords',
+      'hero.keywordsChips':
+        '<span class="chip">information system</span><span class="chip">web app</span><span class="chip">sports training</span><span class="chip">nutrition</span><span class="chip">BMI</span><span class="chip">TDEE</span><span class="chip">macros</span><span class="chip">product catalog</span><span class="chip">exercise catalog</span>',
       'hero.ctaDemo': 'View Demo',
       'hero.ctaFullText': 'Full Thesis Text',
 
@@ -143,8 +147,10 @@
         'Requirements analysis; UI/UX design; prototype implementation; verification of formula correctness and interaction scenarios.',
 
       'tech.title': 'Tech Stack',
-      'tech.content':
-        'React + Vite, JavaScript, SCSS; server: Node.js/Express; DB: PostgreSQL (Prisma); data: JSON \u2192 API.',
+      'tech.frontendLabel': 'Frontend',
+      'tech.backendLabel': 'Backend',
+      'tech.dbLabel': 'Database',
+      'tech.dataLabel': 'Data',
 
       'results.title': 'Expected Results',
       'results.item1': 'Full-featured web application with adaptive interface.',
