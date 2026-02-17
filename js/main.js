@@ -210,12 +210,12 @@
       '@type': 'WebSite',
       name: 'MSportFit',
       description: dict['meta.description'],
-      url: 'https://example.com/',
+      url: 'https://mishasamonov.github.io/msportfit-landing/',
       inLanguage: lang === 'ua' ? 'uk' : 'en',
       author: { '@type': 'Person', name: dict['contact.authorName'] },
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://example.com/search?q={search_term_string}',
+        target: 'https://mishasamonov.github.io/msportfit-landing/search?q={search_term_string}',
         'query-input': 'required name=search_term_string'
       }
     };
